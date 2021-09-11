@@ -1,3 +1,382 @@
-// @media(max-width: 1900px){
+@media(max-width: 1400px) {
+    .start__img {
+        height: 420px;
+    }
 
-// }
+    .start__title {
+        padding-top: 10px;
+        font-size: 40px;
+        line-height: 48px;
+        max-width: 430px;
+    }
+
+    .start__subtitle {
+        font-size: 30px;
+        line-height: 40px;
+        margin-bottom: 30px;
+    }
+
+    .start__text {
+        margin-bottom: 40px;
+    }
+
+    .start__btn {
+        margin-bottom: 50px;
+    }
+}
+
+
+@media(max-width: 1380px) {
+    .header__address {
+        order: 2;
+        width: 100%;
+        padding: 5px 0;
+
+        span {
+            display: inline-block;
+        }
+    }
+
+    .header__inner {
+        flex-wrap: wrap;
+    }
+
+    .student__img {
+        height: 500px;
+    }
+
+    .student__title {
+        padding-top: 70px;
+    }
+}
+
+@media(max-width: 1250px) {
+    .training__inner {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .training__item{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
+
+@media(max-width: 1200px) {
+    .benefits__title {
+        padding-top: 15px;
+        padding-bottom: 0;
+    }
+}
+
+@media(max-width: 1100px) {
+    .header__logo {
+        max-width: 420px;
+    }
+
+    .header__logo-title {
+        max-width: 300px;
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    .benefits__list {
+        padding-bottom: 7px;
+    }
+    .footer__inner{
+        flex-wrap: wrap;
+    }
+    .footer__address{
+        width: 100%;
+        text-align: center;
+        order: 1;
+        padding-top: 30px;
+    }
+    .footer__social{
+        order: 1;
+        margin: 0 auto;
+        padding-top: 30px;
+    }
+}
+
+@media(max-width: 1000px) {
+
+    .start,
+    .about,
+    .student,
+    .benefits {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .start__img {
+        max-width: 750px;
+        width: 100%;
+        height: 400px;
+        margin: 0 auto;
+        background-size: content;
+    }
+
+    .start__box {
+        width: 100%;
+    }
+
+    .global__box-text {
+        width: 100%;
+    }
+
+    .global__box-img {
+        width: 100%;
+        max-width: 750px;
+        margin: 0 auto;
+        background-size: content;
+        height: 400px;
+    }
+
+    .about__box,
+    .benefits__box {
+        order: 1;
+        padding-bottom: 30px;
+    }
+
+    .student__box {
+        padding-bottom: 30px;
+    }
+
+    .about__title,
+    .student__title {
+        padding-top: 30px;
+    }
+
+    .student__title {
+        margin-bottom: 15px;
+    }
+}
+
+
+@media(max-width: 880px) {
+    .header__social {
+        display: none;
+    }
+
+    .header__logo {
+        max-width: 375px;
+
+        img {
+            width: 114px;
+            height: 50px;
+        }
+    }
+
+    .price__inner {
+        flex-wrap: wrap;
+    }
+
+    .price__item {
+        margin-bottom: 30px;
+    }
+
+    .price {
+        padding-bottom: 0;
+    }
+}
+
+@media(max-width: 650px) {
+    .start__title {
+        font-size: 34px;
+        line-height: 40px;
+    }
+
+    .start__subtitle {
+        font-size: 26px;
+        line-height: 32px;
+    }
+
+    .start__text {
+        font-size: 20px;
+        line-height: 22px;
+        margin-bottom: 30px;
+    }
+
+    .start__btn {
+        margin-bottom: 30px;
+    }
+
+    .global__box-img {
+        height: 300px;
+    }
+    .contacts__wrapper{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .contacts__form-text{
+        margin-left: 0;
+    }
+}
+
+@media(max-width: 600px) {
+    .header__logo {
+        max-width: 309px;
+    }
+
+    .header__logo-title {
+        font-size: 22px;
+        line-height: 30px;
+        max-width: 226px;
+    }
+
+    .header__contact-phone {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .about__text {
+        margin-bottom: 40px;
+    }
+
+    .price__title {
+        padding-bottom: 20px;
+    }
+
+    .price {
+        padding-top: 15px;
+    }
+    .footer__logo{
+        max-width: 259px;
+        img{
+            width: 80px;
+            height: 35px;
+        }
+          &-title {
+              font-size: 20px;
+              line-height: 25px;
+              max-width: 179px;
+          }
+    }
+}
+
+@media(max-width: 510px) {
+    .header__logo {
+        max-width: 259px;
+
+        img {
+            width: 80px;
+            height: 35px;
+
+        }
+
+        &-title {
+            font-size: 20px;
+            line-height: 25px;
+            max-width: 179px;
+        }
+
+    }
+
+    .header__contact {
+        width: 142px;
+        padding: 0;
+    }
+
+    .header__contact-phone,
+    .header__contact-email {
+        width: 142px;
+    }
+    .footer__contact{
+        width: 100%;
+        padding-top: 30px;
+    }
+}
+
+@media(max-width: 460px) {
+
+    .start__img {
+        height: 320px;
+    }
+
+    .start__title {
+        font-size: 28px;
+        line-height: 36px;
+        max-width: 380px;
+    }
+
+    .main-btn {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    .start__subtitle {
+        margin-bottom: 20px;
+    }
+
+    .start__text {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .global__box-text {
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .student__text {
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    .price__item-title {
+        font-size: 22px;
+        line-height: 22px;
+    }
+
+    .price__item-text {
+        font-size: 16px;
+        line-height: 18px;
+    }
+    .training-btn{
+        font-size: 16px;
+        line-height: 21px;
+        bottom: 15px;
+        padding: 9px 10px;
+        width: 190px;
+    }
+    .training__item{
+        width: 350px;
+    }
+}
+
+@media(max-width: 435px) {
+    .header__logo {
+        max-width: 218px;
+
+        img {
+            width: 70px;
+            height: 32px;
+        }
+
+        &-title {
+            font-size: 18px;
+            line-height: 22px;
+            max-width: 148px;
+            padding: 0;
+            padding-left: 5px;
+        }
+    }
+
+    .global__box-img {
+        height: 250px;
+    }
+}
+
+@media(max-width: 390px) {
+    .header__logo {
+        max-width: 70px;
+    }
+
+    .header__logo-title {
+        display: none;
+    }
+
+    .start__img {
+        height: 270px;
+    }
+}

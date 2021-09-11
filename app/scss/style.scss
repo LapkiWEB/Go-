@@ -1,12 +1,525 @@
-@import 'vars';
-@import 'global';
-@import 'fonts';
+ @import 'vars';
+ @import 'global';
+ @import 'fonts';
 
-// start header
+ // start header
+ .header {
+     padding-top: 20px;
+     padding-bottom: 20px;
+ }
+
+ .header__inner {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+
+ .header__logo {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     max-width: 640px;
+     width: 100%;
+
+     img {
+         width: 160px;
+         height: 70px;
+     }
+
+     &-title {
+         @extend %Al-Regular;
+         font-size: 36px;
+         line-height: 49px;
+         max-width: 477px;
+         width: 100%;
+         padding: 0px 10px;
+         color: $GO-title;
+     }
+ }
+
+ .header__address {
+     @extend %Al-Regular;
+     font-size: 18px;
+     line-height: 24px;
+
+     span {
+         display: block;
+     }
+ }
+
+
+ .header__contact {
+     @extend %Al-Regular;
+     width: 170px;
+     text-align: center;
+     padding: 3px;
+ }
+
+ .header__contact-phone {
+     width: 173px;
+     color: $GO-red;
+     font-size: 24px;
+     line-height: 33px;
+     transition: all .3s;
+
+     &:hover {
+         background-color: $GO-red;
+         color: #fff;
+         border-radius: 3px;
+     }
+ }
+
+ .header__contact-email {
+     width: 170px;
+     text-decoration: revert;
+     font-size: 18px;
+     line-height: 24px;
+ }
+
+ .header__social-list {
+     display: inline-block;
+
+     &+.header__social-list {
+         margin-left: 10px;
+     }
+ }
+
+
+ // end header
+
+
+ // start section start
+
+ .start {
+     // height: 606px;
+     display: flex;
+     justify-content: space-between;
+ }
+
+ .start__img {
+     width: 50%;
+     //  background-image: url("../images/content/img1.jpg");
+     background-position: right;
+     background-repeat: no-repeat;
+     background-size: cover;
+     height: 606px;
+ }
+
+ .start__box {
+     width: 50%;
+     text-align: center;
+     padding: 0 10px;
+ }
+
+ .start__title {
+     @extend %Al-Bold;
+     font-size: 48px;
+     line-height: 65px;
+     padding-top: 38px;
+     border-bottom: 2px solid $GO-red;
+     max-width: 517px;
+     margin: 0 auto;
+ }
+
+ .start__subtitle {
+     @extend %Al-Regular;
+     font-size: 36px;
+     line-height: 49px;
+     margin-bottom: 54px;
+ }
+
+ .start__text {
+     font-size: 24px;
+     line-height: 28px;
+     margin-bottom: 80px;
+ }
+
+ .start__btn {
+     margin-bottom: 66px;
+ }
+
+ // end section start
+
+ //  start section about
+
+ .about {
+     display: flex;
+     justify-content: space-between;
+ }
+
+ .global__box-text {
+     width: 50%;
+     @extend %Rubik-Light;
+     font-size: 18px;
+     line-height: 21px;
+     text-align: center;
+     padding: 0 10px;
+ }
+
+ .global__box-img {
+     width: 50%;
+ }
+
+ .about__img {
+     height: 462px;
+     background-position: right;
+     background-size: cover;
+     background-repeat: no-repeat;
+ }
+
+ .about__title {
+     padding-top: 80px;
+ }
+
+ .about__subtitle {
+     margin-bottom: 20px;
+ }
+
+ .about__text {
+     max-width: 525px;
+     width: 100%;
+     margin: 0 auto;
+     margin-bottom: 90px;
+ }
+
+ .about__link {
+     @extend %Al-Regular;
+     color: $GO-red;
+     font-size: 24px;
+     line-height: 33px;
+ }
+
+ //  end section about
+
+
+ // start section student
+ .student {
+     display: flex;
+     justify-content: space-between;
+ }
+
+ .student__img {
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+     height: 630px;
+ }
+
+ .student__title {
+     padding-top: 120px;
+     margin-bottom: 40px;
+ }
+
+ .student__text {
+     max-width: 525px;
+     margin: 0 auto;
+     font-size: 18px;
+     line-height: 35px;
+     margin-bottom: 70px;
+ }
+
+
+ // end section student
+
+ // start section benefits
+ .benefits {
+     display: flex;
+     justify-content: space-between;
+ }
+
+ .benefits__img {
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     height: 557px;
+ }
+
+ .benefits__title {
+     padding-top: 15px;
+     padding-bottom: 15px;
+ }
+
+ .benefits__text {
+     text-align-last: left;
+     padding: 0 15px;
+     max-width: 670px;
+     width: 100%;
+     margin: 0 auto;
+     margin-bottom: 20px;
+ }
+
+ .benefits__list {
+     position: relative;
+     padding-bottom: 10px;
+     text-align: left;
+
+     &::before {
+         position: absolute;
+         content: "";
+         width: 5px;
+         height: 5px;
+         border-radius: 50%;
+         background-color: $GO-red;
+         top: 7px;
+         left: -10px;
+     }
+
+     span {
+         font-size: 14px;
+         line-height: 17px;
+         text-align: left;
+     }
+ }
+
+ // end section benefits
+
+ // start section price
+ .price {
+     background-color: #EEEEEE;
+     padding: 50px 0;
+     margin-bottom: 40px;
+ }
+
+ .price__title {
+     padding-bottom: 45px;
+ }
+
+ .price__inner {
+     display: flex;
+     justify-content: center;
+ }
+
+ .price__item {
+     max-width: 500px;
+     width: 100%;
+     text-align: center;
+ }
+
+ .price__item-title {
+     @extend %Rubik-Regular;
+     font-size: 24px;
+     line-height: 28px;
+     padding-bottom: 15px;
+ }
+
+ .price__item-text {
+     font-size: 18px;
+     line-height: 21px;
+     color: $GO-red;
+     padding-bottom: 15px;
+ }
+
+ // end section price
+
+ // start section training
+ .training {
+     background-color: $GO-red;
+     padding-bottom: 18px;
+     margin-bottom: 20px;
+ }
+
+ .training__title {
+     color: #fff;
+     margin-bottom: 40px;
+     padding-top: 15px;
+ }
+
+ .training__inner {
+     display: flex;
+     justify-content: space-between;
+ }
+
+ .training__item {
+     width: 400px;
+     padding: 15px;
+     background-color: #fff;
+     text-align: center;
+     position: relative;
+     height: 500px;
+     margin-bottom: 30px;
+
+
+     &-title {
+         @extend %Al-Bold;
+         font-size: 36px;
+         line-height: 49px;
+         padding: 0px 40px;
+         border-bottom: 1px solid $GO-red;
+         max-width: fit-content;
+         margin: 0 auto;
+         margin-bottom: 50px;
+     }
+ }
+
+ .training__item-text {
+     margin: 0 auto;
+     margin-bottom: 30px;
+     max-width: 300px;
+ }
+
+ .training-btn {
+     position: absolute;
+     bottom: 30px;
+     transform: translate(-50%, -50%);
+     font-size: 18px;
+     line-height: 24px;
+ }
+
+ .training__text {
+     font-size: 24px;
+     line-height: 33px;
+     text-align: center;
+     color: #fff;
+     @extend %Al-Regular;
+ }
+
+ // end section training
+
+ //  start section contacts
+
+ .contacts {
+     background-color: #EDEDED;
+     padding: 18px 0;
+     margin-bottom: 20px;
+ }
+.contacts__title{
+    padding-bottom: 10px;
+}
+ .contacts__form {
+     // margin: 0 auto;
+     // text-align: center;
+ }
+
+ .contacts__form {}
+
+ .contacts__wrapper {
+     display: flex;
+     justify-content: space-between;
+     max-width: 920px;
+     margin: 0 auto;
+ }
+
+ .contacts__inner {
+     display: flex;
+     justify-content: center;
+     flex-wrap: wrap;
+     max-width: 450px;
+ }
 
 
 
+ .contacts__form-name,
+ .contacts__form-phone,
+ .contacts__form-text {
+     max-width: 450px;
+     width: 100%;
+     border: 1px solid #6B696B;
+     padding: 10px;
+     background-color: #fff;
+     font-size: 18px;
+     line-height: 16px;
+     margin-bottom: 20px;
+      resize: none;
+      @extend %Rubik-Light;
+      color: $GO-title;
+ }
+ .contacts__form-text{
+     margin-left: 10px;
+ }
+.contacts__wrapper-btn{
+    text-align: center;
+    padding: 10px 0;
+}
+ //  end section contacts
 
-// end header
+//  start footer
 
-@import 'media';
+.footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 350px;
+    width: 100%;
+
+    img {
+        width: 137px;
+        height: 60px;
+    }
+
+    &-title {
+        @extend %Al-Regular;
+        font-size: 24px;
+        line-height: 33px;
+        max-width: 211px;
+        width: 100%;
+        padding: 0px 10px;
+        color: $GO-title;
+    }
+}
+
+.footer__address {
+    @extend %Al-Regular;
+    font-size: 14px;
+    line-height: 17px;
+   
+
+    span {
+        display: block;
+        font-size: 24px;
+        line-height: 33px;
+        color: $GO-red;
+    }
+}
+
+
+.footer__contact {
+    @extend %Al-Regular;
+    width: 170px;
+    text-align: center;
+    padding: 3px;
+}
+
+.footer__contact-phone {
+    width: 173px;
+    color: $GO-red;
+    font-size: 24px;
+    line-height: 33px;
+    transition: all .3s;
+
+    &:hover {
+        background-color: $GO-red;
+        color: #fff;
+        border-radius: 3px;
+    }
+}
+
+.footer__contact-email {
+    width: 170px;
+    text-decoration: revert;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.footer__social{
+    display: flex;
+}
+.footer__social-list {
+    display: inline-block;
+
+    &+.footer__social-list {
+        margin-left: 10px;
+    }
+}
+//  end footer
+ @import 'media';
