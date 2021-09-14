@@ -40,9 +40,8 @@ function images() {
 
 function scripts() {
   return src([
-    'node_modules/jquery/dist/jquery.js', 
-    'node_modules/slick-carousel/slick/slick.min.js',
-    'app/js/main.js'  
+    'app/js/main.js',
+    'node_modules/magnific-popup/dist/jquery.magnific-popup.min.js'
   ])
   .pipe(concat('main.min.js'))
   .pipe(uglify())
@@ -53,7 +52,7 @@ function scripts() {
 function styles() {
     return src([
       'app/scss/style.scss',
-      'node_modules/slick-carousel/slick/slick.css',
+      'node_modules/magnific-popup/dist/magnific-popup.css'
   ])
     .pipe(scss({outputStyle: 'compressed'}))
     .pipe(concat('style.min.css'))
