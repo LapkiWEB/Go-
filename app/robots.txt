@@ -1,0 +1,4 @@
+User-agent: *
+Host: https://go-irk.ru/
+
+Sitemap: https://go-irk.ru/sitemap.xml
